@@ -1,19 +1,15 @@
 # pylint: disable=invalid-name
-from ariadne import graphql_sync, gql, make_executable_schema, QueryType
+from ariadne import graphql_sync
 from ariadne.constants import PLAYGROUND_HTML
 from flask import Flask, request, jsonify
 from flask import render_template
 
+from app.api.graphql_engine import GraphqlEngine
+
 app = Flask(__name__)
 
-raw_shema = gql("""
-type Query {
-    hello: String!
-}
-""")
-query = QueryType()
-schema = make_executable_schema(raw_shema, query)
-
+graphql_engine = GraphqlEngine()
+schema = graphql_engine.schema()
 
 @app.route("/")
 def hello():

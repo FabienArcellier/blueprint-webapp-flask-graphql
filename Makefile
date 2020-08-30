@@ -53,11 +53,15 @@ prod: ## run the webserver for production
 	pipenv run honcho start
 
 .PHONY: tests
-tests: _init_venv tests_units tests_acceptances ## run automatic tests
+tests: _init_venv tests_units tests_integrations tests_acceptances ## run automatic tests
 
 .PHONY: tests_units
 tests_units: ## run only unit tests
 	pipenv run python -u -m unittest discover "$(TEST_MODULE)/units"
+
+.PHONY: tests_integrations
+tests_integrations: ## run only unit tests
+	pipenv run python -u -m unittest discover "$(TEST_MODULE)/integrations"
 
 .PHONY: tests_acceptances
 tests_acceptances: ## run only acceptance tests
