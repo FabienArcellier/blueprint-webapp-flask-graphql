@@ -14,7 +14,18 @@
         ]
     },
     "default": {
+        "ariadne": {
+            "hashes": [
+                "sha256:00a21584eb5ca8751380f9870d560db0a486ff69747884674caaee811a2ae64b",
+                "sha256:e88b574d13c155f934d5e57431e5f9ab3a266a7064a6e397e7c662241276e2e3"
+            ],
+            "version": "==0.12.0"
+        },
         "blueprint-webapp-flask": {
+            "editable": true,
+            "path": "."
+        },
+        "blueprint-webapp-flask-graphql": {
             "editable": true,
             "path": "."
         },
@@ -33,6 +44,14 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==2.0.1"
+        },
+        "graphql-core": {
+            "hashes": [
+                "sha256:51f7dab06b5035515b23984f6fcb677ed909b56c672152699cca32e03624992e",
+                "sha256:dfc374d3426677727772d8da9dd010e92d10305ddd9c2f7f0fc388f07cee94c4"
+            ],
+            "markers": "python_version >= '3.6' and python_version < '4'",
+            "version": "==3.0.5"
         },
         "gunicorn": {
             "hashes": [
@@ -105,6 +124,22 @@
             "markers": "python_version >= '3.6'",
             "version": "==2.0.1"
         },
+        "starlette": {
+            "hashes": [
+                "sha256:40afea6ffa830849800cc4efdf006a86ad579d6ba6b64cb1925a1897b020ba6e",
+                "sha256:82df29b2149437ad828a883674bf031788600c876dae50835e98398bd1706183"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==0.13.8"
+        },
+        "typing-extensions": {
+            "hashes": [
+                "sha256:7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918",
+                "sha256:99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c",
+                "sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"
+            ],
+            "version": "==3.7.4.3"
+        },
         "werkzeug": {
             "hashes": [
                 "sha256:1de1db30d010ff1af14a009224ec49ab2329ad2cde454c8a708130642d579c42",
@@ -115,6 +150,13 @@
         }
     },
     "develop": {
+        "ariadne": {
+            "hashes": [
+                "sha256:00a21584eb5ca8751380f9870d560db0a486ff69747884674caaee811a2ae64b",
+                "sha256:e88b574d13c155f934d5e57431e5f9ab3a266a7064a6e397e7c662241276e2e3"
+            ],
+            "version": "==0.12.0"
+        },
         "astroid": {
             "hashes": [
                 "sha256:4db03ab5fc3340cf619dbc25e42c2cc3755154ce6009469766d7143d1fc2ee4e",
@@ -124,6 +166,10 @@
             "version": "==2.5.6"
         },
         "blueprint-webapp-flask": {
+            "editable": true,
+            "path": "."
+        },
+        "blueprint-webapp-flask-graphql": {
             "editable": true,
             "path": "."
         },
@@ -200,6 +246,14 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==2.0.1"
+        },
+        "graphql-core": {
+            "hashes": [
+                "sha256:51f7dab06b5035515b23984f6fcb677ed909b56c672152699cca32e03624992e",
+                "sha256:dfc374d3426677727772d8da9dd010e92d10305ddd9c2f7f0fc388f07cee94c4"
+            ],
+            "markers": "python_version >= '3.6' and python_version < '4'",
+            "version": "==3.0.5"
         },
         "gunicorn": {
             "hashes": [
@@ -323,6 +377,14 @@
             "markers": "python_version ~= '3.6'",
             "version": "==2.8.3"
         },
+        "starlette": {
+            "hashes": [
+                "sha256:40afea6ffa830849800cc4efdf006a86ad579d6ba6b64cb1925a1897b020ba6e",
+                "sha256:82df29b2149437ad828a883674bf031788600c876dae50835e98398bd1706183"
+            ],
+            "markers": "python_version >= '3.6'",
+            "version": "==0.13.8"
+        },
         "toml": {
             "hashes": [
                 "sha256:806143ae5bfb6a3c6e736a764057db0e6a0e05e338b5630894a5f779cabb4f9b",
@@ -330,6 +392,14 @@
             ],
             "markers": "python_version >= '2.6' and python_version not in '3.0, 3.1, 3.2, 3.3'",
             "version": "==0.10.2"
+        },
+        "typing-extensions": {
+            "hashes": [
+                "sha256:7cb407020f00f7bfc3cb3e7881628838e69d8f3fcab2f64742a5e76b2f841918",
+                "sha256:99d4073b617d30288f569d3f13d2bd7548c3a7e4c8de87db09a9d29bb3a4a60c",
+                "sha256:dafc7639cde7f1b6e1acc0f457842a83e722ccca8eef5270af2d74792619a89f"
+            ],
+            "version": "==3.7.4.3"
         },
         "werkzeug": {
             "hashes": [

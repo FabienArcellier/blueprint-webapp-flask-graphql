@@ -2,11 +2,32 @@
 
 ## Motivation
 
-blueprint to implement a flask application. This application may be used to:
+blueprint to implement a flask application that host graphql api using [`Ariadne`](https://ariadnegraphql.org/).
+This application may be used to:
 
-* build MVC application as multipage web application
-* build API application
+* build Graphql API application
+* build Hybrid API application with Graphql endpoint and Rest endpoints
 * ...
+
+A graphql API allow the client to query only data it need. A contract will be specified between
+the client and the server through graphql schema.
+
+Ariadne is a schema-first framework. It requires you specify graphql schema to bind ``resolver`` on
+it. The configuration is straight forward. To fetch data, we will specify ``Query``. To modify data, we will
+specify ``Mutation``. Graphql is type based API.
+
+For Ariadne, the `resolver` is the equivalent of `Controller` in MVC pattern. It will take a part of a query and send
+back the requested answer. Ariadne will internally glue the answers from all the resolvers involved in a Query.
+
+### Going further
+
+I have done a more advanced study about 2 graphql engine (Ariadne, Graphene), the link between ORM and graphql with Ariadne and SqlAlchemy and
+the usage of advanced proxy to perform graphql federation with Apollo Server and Ariadne in 4 spikes :
+
+* [https://github.com/FabienArcellier/spike-ariadne](https://github.com/FabienArcellier/spike-ariadne)
+* [https://github.com/FabienArcellier/spike-graphene-flask](https://github.com/FabienArcellier/spike-graphene-flask)
+* [https://github.com/FabienArcellier/spike-orm-python-typescript](https://github.com/FabienArcellier/spike-orm-python-typescript)
+* [https://github.com/FabienArcellier/spike-apollo-federation](https://github.com/FabienArcellier/spike-apollo-federation)
 
 ## Getting started
 
