@@ -9,6 +9,8 @@ This application may be used to:
 * build Hybrid API application with Graphql endpoint and Rest endpoints
 * ...
 
+![](docs/graphql_playground.png)
+
 A graphql API allow the client to query only data it need. A contract will be specified between
 the client and the server through graphql schema.
 
