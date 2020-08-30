@@ -1,4 +1,4 @@
-[![ci](https://github.com/FabienArcellier/blueprint-webapp-flask/actions/workflows/main.yml/badge.svg)](https://github.com/FabienArcellier/blueprint-webapp-flask/actions/workflows/main.yml)
+[![ci](https://github.com/FabienArcellier/blueprint-webapp-flask-graphql/actions/workflows/main.yml/badge.svg)](https://github.com/FabienArcellier/blueprint-webapp-flask-graphql/actions/workflows/main.yml)
 
 ## Motivation
 
@@ -10,6 +10,7 @@ This application may be used to:
 * ...
 
 ![](docs/graphql_playground.png)
+*take a look on http://localhost:5000/graphql*
 
 A graphql API allow the client to query only data it need. A contract will be specified between
 the client and the server through graphql schema.
